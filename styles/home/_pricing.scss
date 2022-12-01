@@ -1,0 +1,178 @@
+.main-pricing {
+	width: 100%;
+	height: 100vh;
+	background-color: #e7ece7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.circle-image {
+		background-image: url("https://maniera.s3.eu-central-1.amazonaws.com/maniera_watch.JPG");
+	}
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+	&-text {
+		margin-left: 50px;
+		&__title {
+			@extend %robo-medium;
+			font-size: 40px;
+			line-height: 60px;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-bottom: 4px solid #000;
+			display: flex;
+			flex-direction: column;
+		}
+		&__wow {
+			@extend %robo-regular;
+			font-size: 30px;
+			text-align: right;
+		}
+	}
+}
+
+
+@media all and (min-width: 1680px) {
+	.main-pricing {
+		&-wrapper {
+			margin-bottom: 50px;
+		}
+		&-text {
+			margin-left: 70px;
+			&__title {
+				font-size: 55px;
+				line-height: 82px;
+				padding-bottom: 30px;
+				margin-bottom: 30px;
+			}
+			&__wow {
+				font-size: 40px;
+			}
+		}
+	}	
+}
+
+@media all and (max-width: 1366px) {
+	.main-pricing {
+		&-wrapper {
+			margin-bottom: 30px;
+		}
+	}	
+}
+
+@media all and (max-width: 1024px) {
+	.main-pricing {
+		height: 100vh;
+		&-wrapper {
+			margin-bottom: 20px;
+		}
+		&-text {
+			margin-left: 30px;
+			&__title {
+				font-size: 30px;
+				line-height: 40px;
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				border-bottom: 2px solid #000;
+			}
+			&__wow {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 767px) {
+	.main-pricing {
+		height: auto;
+		padding: 0 0 100px 0;
+		flex-direction: column-reverse;
+		&-wrapper {
+			margin: 100px 0 0 0;
+			flex-direction: column;
+		}
+		.circle {
+			margin-bottom: 30px;
+		}
+		&-text {
+			margin-left: 0;
+			display: flex;
+			flex-direction: column-reverse;
+			&__title {
+				width: 300px;
+				font-size: 30px;
+				line-height: 40px;
+				padding-bottom: 0;
+				margin-bottom: 0;
+				border-bottom: none;
+				.top {
+					word-spacing: 28px;
+					letter-spacing: 4px;
+				}
+				.middle {
+					letter-spacing: 13px;
+				}
+				.bottom {
+					word-spacing: 28px;
+					letter-spacing: 4px;
+				}
+			}
+			&__wow {
+				text-align: center;
+				position: relative;
+				margin-bottom: 30px;
+				&:before,
+				&::after {
+					content: '';
+					display: block;
+					width: 110px;
+					height: 2px;
+					background-color: #000;
+					position: absolute;
+					top: calc(50% - 1px);
+					left: 0;
+				}
+				&:after {
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+	}	
+}
+
+@media all and (max-width: 500px) {
+	.main-pricing {
+		padding: 0 0 80px 0;
+		&-wrapper {
+			margin: 80px 0 0 0;
+		}
+		&-text {
+			&__title {
+				width: 240px;
+				font-size: 25px;
+				line-height: 35px;
+				.top {
+					word-spacing: 15px;
+				}
+				.middle {
+					letter-spacing: 9px;
+				}
+				.bottom {
+					word-spacing: 15px;
+				}
+			}
+			&__wow {
+				font-size: 15px;
+				margin-bottom: 15px;
+				&:before,
+				&::after {
+					width: 90px;
+				}
+			}
+		}
+	}		
+}

@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "RobotoMono-Medium";
+  src: url("/RobotoMono-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "RobotoMono-Regular";
+  src: url("/RobotoMono-Regular.woff") format("woff");
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "NocturneSerif-Regular", serif;
+  color: #000;
+  font-weight: normal;
+  font-size: 16px;
+
+  @media (max-width: 1024px) {
+    overflow-y: auto;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.under-construction {
+  width: 100%;
+  height: 100vh;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "RobotoMono-Medium", sans-serif;
+  font-size: 40px;
+  @media all and (max-width: 1024px) {
+    font-size: 30px;
+    padding: 0 20px;
+  }
+}
+
+.scroll-wrapper {
+  @media (min-width: 1024px) {
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+    text-align: center;
+    scroll-snap-type: y mandatory;
+    scroll-padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+.section {
+  @media (min-width: 1024px) {
+    scroll-snap-align: center;
+  }
+}
+
+.indicator-wrapper {
+  position: fixed;
+  z-index: 1;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    & > div {
+      border-radius: 50%;
+      height: 4px;
+      width: 4px;
+      background: #333;
+      transition: all 0.1s ease-in-out;
+    }
+
+    &:hover:not(.active) > div {
+      height: 8px;
+      width: 8px;
+    }
+  }
+
+  .active div {
+    height: 12px;
+    width: 12px;
+  }
+}
+
+#x {
+  background-color: pink;
+}
+#y {
+  background-color: lightcyan;
+}
+#z {
+  background-color: lightgray;
+}

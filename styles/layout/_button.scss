@@ -1,0 +1,235 @@
+
+.button-wrapper {	
+    width: 680px;
+    height: 60px;
+    @extend %robo-medium;	
+    display: block;
+	position: relative;	
+	color: #000;
+	text-transform: uppercase;
+	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+    user-select: none;
+    z-index: 1;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    &--light {
+        color: #dcccb4;
+        border-color: #dcccb4;  
+    }
+}
+
+.button-wrapper--mint:hover {
+	color: #E7ECE7;
+}
+.button-wrapper--violet:hover {
+	color: #473B4D;
+}
+.button-wrapper--beige:hover {
+	color: #E9E4D8;
+}
+
+.button-wrapper:before, .button-wrapper:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.button-wrapper:hover {
+	transition-delay: .6s;
+}
+
+.button-wrapper:hover:before {
+	transition-delay: 0s;
+}
+
+.button-wrapper:hover:after {
+	background: #000;
+	transition-delay: .4s;
+}
+
+.button-wrapper--light:hover:after {
+	background: #dcccb4;
+	transition-delay: .4s;
+}
+
+.from-right:before, 
+.from-right:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.button-wrapper.from-right:before {
+	left: 0;
+	border: 2px solid #000;
+	border-left: 0;
+	border-right: 0;	
+}
+
+.button-wrapper--light.from-right:before {
+	left: 0;
+	border: 2px solid #dcccb4;
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-right:after {
+	right: 0;
+}
+
+.from-right:hover:before,
+.from-right:hover:after {
+	width: 100%;
+}
+
+
+
+.mobile-button-wrapper {
+    @extend %robo-medium;   
+}
+
+@media all and (min-width: 1680px) {
+    .button-wrapper {
+        width: 930px;
+        height: 82px!important;
+        &__text {
+            font-size: 35px;
+            height: 82px;
+        }
+    }   
+}
+
+@media all and (max-width: 1024px) {
+    .mobile-button-wrapper {
+        width: 620px;
+        height: 50px;
+        border: 2px solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        &--light {
+            color: #dcccb4;
+            border-color: #dcccb4;  
+        }
+    }  
+}
+
+@media all and (max-width: 767px) {
+    .mobile-button-wrapper {
+        width: 400px;
+        font-size: 15px;
+    }    
+}
+
+@media all and (max-width: 500px) {
+    .mobile-button-wrapper {
+        width: 260px;
+        height: 40px;
+        font-size: 12px;
+    }     
+}
+
+// .app-button {
+// 	width: 680px;
+// 	height: 60px;
+// }
+
+// .app-button span{
+// 	display: block;
+// 	position: relative;
+// 	line-height: 60px;
+// 	height: 60px;
+// 	cursor: pointer;
+// }
+
+// .app-button > span:after{
+// 	content:'';
+// 	position: absolute;
+// 	top:0;
+// 	left: 50%;
+// 	width: 0;
+// 	height: 0;
+	
+// 	border: 2px solid transparent;
+// 	border-left: none;
+// 	border-bottom: none;
+
+//     transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+    
+// }
+
+// .app-button:hover > span:after{
+//     border-color: white;
+// 	width: calc(50% - 1px);
+// 	height: calc(100% - 2px);
+// 	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+// }
+
+// .app-button > span:before{
+// 	content:'';
+// 	position: absolute;
+// 	top:0;
+// 	right: 50%;
+// 	width: 0;
+// 	height: 0;
+	
+// 	border: 2px solid white;
+// 	border-right: none;
+// 	border-bottom: none;
+	
+//     transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+// }
+
+// .app-button:hover > span:before{
+//     border-color: white;
+// 	width: calc(50% - 1px);
+// 	height: calc(100% - 2px);
+// 	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+// }
+
+// .app-button > span > span:before{
+// 	content:'';
+// 	position: absolute;
+// 	bottom:0;
+// 	right: 0%;
+// 	width: 1px;
+// 	height: 1px;
+// 	opacity: 0;
+	
+// }
+
+// .app-button:hover > span > span:before{
+// 	opacity: 1;
+//     border-bottom: 2px solid white;
+// 	width: calc(50%);
+// 	height: 1px;
+// 	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+// }
+
+// .app-button > span > span:after{
+// 	content:'';
+// 	position: absolute;
+// 	bottom:0;
+// 	left: 0%;
+// 	width: 1px;
+// 	height: 1px;
+// 	opacity: 0;
+// }
+
+// .app-button:hover > span > span:after{
+// 	opacity: 1;
+// 	border-bottom: 2px solid white;
+// 	width: calc(50%);
+// 	height: 2px;
+// 	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+// }

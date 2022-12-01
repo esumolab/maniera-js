@@ -1,0 +1,29 @@
+{
+  "name": "manierav2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fullpage/react-fullpage": "0.1.23",
+    "axios": "^1.2.0",
+    "classnames": "^2.3.2",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "next": "13.0.5",
+    "normalize.css": "^8.0.1",
+    "react": "18.2.0",
+    "react-app-polyfill": "^3.0.0",
+    "react-awesome-reveal": "^4.1.0",
+    "react-dom": "18.2.0",
+    "react-modal": "^3.16.1",
+    "react-responsive": "^9.0.2",
+    "react-scroll-parallax": "^3.3.2",
+    "reset-css": "^5.0.1",
+    "sass": "^1.56.1"
+  }
+}

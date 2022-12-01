@@ -1,0 +1,156 @@
+$width: 866px;;
+
+.faq {
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #473B4D;
+        padding: 120px 0;
+        color: #DCCCB4;
+    }
+    &-title {
+        @extend %servus-regular-italic;
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+    &-wrapper {
+        width: $width;
+        display: flex;
+        flex-direction: column;
+    }
+    &-item {
+        border-bottom: 1px solid #DCCCB4;
+        width: 100%;
+        padding: 0 20px;
+        &__title {
+            @extend %servus-regular;
+            font-size: 25px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            &--open {
+                @extend %servus-regular-italic; 
+            }
+            transition: font-style 2s ease;
+            &:hover {
+                font-weight: 600;
+            }
+        }
+        &__answer {
+            @extend %servus-regular;
+            font-size: 15px;
+            line-height: 26px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    }
+}
+
+@media all and (min-width: 1680px) {
+    $width: 1060px;;
+
+    .faq {
+        &-content {
+            padding: 160px 0;
+        }
+        &-title {
+            font-size: 62px;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            &__title {
+                font-size: 32px;
+                height: 150px;
+            }
+            &__answer {
+                font-size: 22px;
+                line-height: 35px;
+            }
+        }
+    } 
+}
+
+@media all and (max-width: 1024px) {
+    $width: 620px;;
+
+    .faq {
+        &-content {
+            padding: 80px 0;
+        }
+        &-title {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            &__title {
+                font-size: 20px;
+                height: 90px;
+                &:hover {
+                    font-weight: normal;
+                }
+            }
+            &__answer {
+                margin-bottom: 30px;
+            }
+        }
+    }   
+}
+
+@media all and (max-width: 767px) {
+    $width: 400px;
+
+    .faq {
+        &-title {
+            text-align: center;
+            width: 330px;
+            font-size: 35px;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            padding: 0;
+            &__title {
+                padding: 0 20px;
+                text-align: center;
+                height: 140px;
+            }
+        }
+    } 
+}
+
+@media all and (max-width: 500px) {
+    $width: 100%;
+
+
+    .faq {
+        &-content {
+            padding: 80px 20px;
+        }
+        &-title {
+            width: 240px;
+            font-size: 22px;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            padding: 0;
+            &__title {
+                font-size: 15px;
+                height: 100px;
+            }
+            &__answer  {
+                padding: 0 20px;
+            }
+        }
+    }    
+}

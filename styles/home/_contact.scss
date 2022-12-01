@@ -1,0 +1,169 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #DCCCB4;
+    background: #473B4D;
+    &-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-info {
+        margin-bottom: 60px;
+        &__text {
+            @extend %servus-regular-italic;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        &__address {
+            @extend %servus-regular;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        &__phone {
+            @extend %servus-regular;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+    }
+    &-faq {
+        margin-top: 60px;
+        &__text {
+            @extend %servus-regular;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media all and (min-width: 1680px) {
+    .contact {
+        &-info {
+            &__text {
+                font-size: 48px;
+                margin-bottom: 25px;
+            }
+            &__address {
+                font-size: 48px;
+                margin-bottom: 25px;
+            }
+            &__phone {
+                font-size: 48px;
+                margin-bottom: 45px;
+            }
+        }
+        &-faq {
+            &__text {
+                font-size: 48px;
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1366px) {
+      
+}
+
+@media all and (max-width: 1024px) {
+    .contact {
+        height: 100vh;
+        &-info {
+            margin-bottom: 35px;
+            &__text {
+                font-size: 31px;
+                margin-bottom: 10px;
+            }
+            &__address {
+                font-size: 31px;
+                margin-bottom: 10px;
+            }
+            &__phone {
+                font-size: 31px;
+                margin-bottom: 30px;
+            }
+        }
+        &-faq {
+            margin-top: 35px;
+            &__text {
+                font-size: 31px;
+                margin-bottom: 30px;
+            }
+        }
+    }    
+}
+
+@media all and (max-width: 767px) {
+    .contact {
+        height: auto;
+        padding: 100px 0;
+        &-info {
+            margin-bottom: 70px;
+            &__text {
+                font-size: 35px;
+                margin-bottom: 50px;
+            }
+            &__address {
+                font-size: 30px;
+                margin-bottom: 20px;
+                width: 250px;
+                text-align: center;
+                line-height: 45px;
+            }
+            &__phone {
+                width: 350px;
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 50px;
+                line-height: 45px;
+            }
+        }
+        &-faq {
+            margin-top: 0;
+            &__text {
+                width: 400px;
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 50px;
+                line-height: 45px;
+            }
+        }
+    }    
+}
+
+@media all and (max-width: 500px) {
+    .contact {
+        padding: 80px 0 80px 0;
+        &-info {
+            margin-bottom: 50px;
+            &__text {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+            &__address {
+                font-size: 20px;
+                margin-bottom: 15px;
+                width: 170px;
+                line-height: 35px;
+            }
+            &__phone {
+                width: 230px;
+                font-size: 20px;
+                margin-bottom: 25px;
+                line-height: 35px;
+            }
+        }
+        &-faq {
+            &__text {
+                width: 265px;
+                font-size: 20px;
+                margin-bottom: 25px;
+                line-height: 35px;
+            }
+        }
+    }     
+}

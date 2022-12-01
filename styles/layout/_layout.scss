@@ -1,0 +1,81 @@
+.collapse {
+	overflow: hidden;
+	max-height: 0;
+	&--open {
+		max-height: 5000px;
+		transition: all 1s ease-in-out;
+	}
+	&--close {
+		max-height: 0;
+		transition: all 1s ease-in-out;
+	}
+}
+
+.link-inner {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	&__default,
+	&__hover {
+		display: block;
+		height: 100%;
+		-webkit-transition: -webkit-transform .3s ease-in-out;
+		-o-transition: transform .3s ease-in-out;
+		transition: transform .3s ease-in-out;
+		transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+	}
+	&__hover {
+		position: absolute;
+		bottom: 100%;
+	}
+}
+
+.app-logo {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 191px;
+	height: 60px;
+	cursor: pointer;
+}
+
+@media all and (min-width: 1680px) {
+	.app-logo {
+		top: 65px;
+		width: 260px;
+		height: 82px;
+	}
+}
+
+@media all and (max-width: 1024px) {
+	.app-logo {
+		top: 45px;
+		width: 160px;
+		height: 50px;
+	}	
+}
+
+@media all and (max-width: 767px) {
+	.app-logo {
+		top: 50px;
+		width: 160px;
+		height: 50px;
+	}		
+}
+
+@media all and (max-width: 500px) {
+	.app-logo {
+		top: 35px;
+		width: 127px;
+		height: 40px;
+	}		
+}
+
+
+
+
+
+
