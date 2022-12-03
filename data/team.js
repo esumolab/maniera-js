@@ -1,11 +1,11 @@
 const TEAM = [
   {
-    name: "Magdalena",
+    name: "Ewa",
     desc: {
-      pl: "Główna konspiratorka. Zawsze trochę zaganiana i roztargniona, ale z ręką na pulsie. Ma milion pomysłów na minutę, uwielbia wyzwania, a przy tym wszystkim towarzyszy jej słodki piesek Tony.",
-      en: "Head conspirator. Magdalena may seem all over the place, but she keeps her eye on the prize. With a head full of ideas, she loves taking on new challenges – with her sweet dog Tony always by her side.",
+      pl: "Główna konspiratorka naszego babińca. Musimy przyznać, że jest niesamowicie ciepłą osobą. Prywatnie 100% z niej kociara.",
+      en: "Główna konspiratorka naszego babińca. Musimy przyznać, że jest niesamowicie ciepłą osobą. Prywatnie 100% z niej kociara.",
     },
-    image: "https://maniera.s3.eu-central-1.amazonaws.com/Magdalena.jpg",
+    image: "/employees/ewa_new.jpg",
   },
   {
     name: "Daria",
@@ -13,39 +13,79 @@ const TEAM = [
       pl: "Zawsze otwarta i uśmiechnięta. Bardzo ceni naturalną urodę i jej celem jest wydobycie naturalnego piękna klientki. Kosmetologia i makijaż permanentny jest wielką pasją na całe życie.",
       en: "Outgoing and always smiling! Daria is an advocate for natural beauty and she will work towards highlighting her every client’s most flattering features. Cosmetology and permanent make-up is her lifelong passion.",
     },
-    image: "https://maniera.s3.eu-central-1.amazonaws.com/Daria.jpg",
+    image: "/employees/daria_new.jpg",
   },
   {
-    name: "Malwina",
+    name: "Nina",
     desc: {
-      pl: "Stylizacja paznokci jest dla niej prawdziwą pasją. Od zawsze rozwijała się w kierunku kosmetyki oraz charakteryzacji. Szybko zrozumiała, że jednak to manicure jest tym, co sprawia jej największą przyjemność. Uwielbia nasycone kolory i z chęcią poszaleje z różnymi wzorkami na paznokciach. Miłośniczka natury, zwierząt i ludzi.",
-      en: "Nail-styling is what gets her going. She was always fascinated by the beauty industry, and quickly realized nails are her true passion. Malwina loves everything that’s colorful and she’ll gladly create a small work of art on your nauls.",
+      pl: "Ogarniacz wszystkiego. Menager w Manierze. Zawsze pomoże i ma serce na dłoni. Zadba też o twoje dobre samopoczucie.",
+      en: "Ogarniacz wszystkiego. Menager w Manierze. Zawsze pomoże i ma serce na dłoni. Zadba też o twoje dobre samopoczucie.",
     },
-    image: "https://maniera.s3.eu-central-1.amazonaws.com/Malwina.jpg",
+    image: "/employees/nina_new.jpg",
   },
   {
-    name: "Małgorzata",
+    name: "Jula",
     desc: {
-      pl: "Właścicielka pięknego uśmiechu – w pracy najbardziej lubi różnych ludzi i cieszy ją bezpośredni kontakt z nimi. Poza pracą interesują ją zagadnienia związane z kosmetologią, a drugą pasją jest kuchnia i wszystko co z nią związane.",
-      en: "Charms with a beautiful smile – at work she enjoys most meeting and getting to know various people. Outside work she can talk your head off about cosmetology or world cuisines!",
+      pl: "Od wejścia zarazi Was pozytywną energią. Stylizacja paznokci jest dla niej prawdziwą pasją.  Jeśli nie znajdziecie jej w manierze to na pewno będzie na siłowni.",
+      en: "Od wejścia zarazi Was pozytywną energią. Stylizacja paznokci jest dla niej prawdziwą pasją.  Jeśli nie znajdziecie jej w manierze to na pewno będzie na siłowni.",
     },
-    image: "https://maniera.s3.eu-central-1.amazonaws.com/Małgosia.jpg",
+    image: "/employees/jula_new.jpg",
   },
   {
-    name: "Olena",
+    name: "Karolina",
     desc: {
-      pl: "W pracy daje z siebie wszystko! Z pozoru cicha i tajemnicza, ale tylko kiedy rozmawia po polsku. Spróbuj przegadać ją po ukraińsku!",
-      en: "She gives 110%! With Lena, accuracy always prevails over speed. Quiet and mysterious when speaking Polish ... when speaking Ukrainian her mouth does not close!",
+      pl: "Nasza kosmetolog o zniewalającym uśmiechu. Zadba o waszą skórę i dobierze spersonalizowaną terapie. Specjalizuje się w mezoterapii, dermapenie i stymulatorach.",
+      en: "Nasza kosmetolog o zniewalającym uśmiechu. Zadba o waszą skórę i dobierze spersonalizowaną terapie. Specjalizuje się w mezoterapii, dermapenie i stymulatorach.",
     },
-    image: "https://maniera.s3.eu-central-1.amazonaws.com/Olena.jpg",
+    image: "/employees/karolina_new.jpg",
   },
   {
-    name: "Zuzia",
+    name: "Viktoria",
     desc: {
-      pl: "Ekspertka w stylizacji oka, działa cuda w nitkowaniu i jest zdecydowanie uzależniona od pracy. Praca z ludźmi sprawia jej prawdziwą radość.",
-      en: "A true eye-styling expert! She works magic with a hair removal thread and is addicted to her job. Working with people is her biggest hoy.",
+      pl: "Organizacja to jej drugie imię. Wyjdziecie od niej z pięknymi paznokciami i naładowane pozytywną energią. Kocha robić frencha.",
+      en: "Organizacja to jej drugie imię. Wyjdziecie od niej z pięknymi paznokciami i naładowane pozytywną energią. Kocha robić frencha.",
     },
-    image: "https://maniera.s3.eu-central-1.amazonaws.com/Zuzia.jpg",
+    image: "/employees/viktoria_new.jpg",
+  },
+  {
+    name: "Ola",
+    desc: {
+      pl: "Stylistka paznokci z zamiłowania. Możecie wykonać u niej również depilacje ciała. Prywatnie miłośniczka psiaków.",
+      en: "Stylistka paznokci z zamiłowania. Możecie wykonać u niej również depilacje ciała. Prywatnie miłośniczka psiaków.",
+    },
+    image: "/employees/ola_new.jpg",
+  },
+  {
+    name: "Pati",
+    desc: {
+      pl: "Wyczaruje wam cuda na paznokciach. Prywatnie miłośniczka podróży. Jej śmiech, którym łatwo można się zarazić słychać w całej Manierze.",
+      en: "Wyczaruje wam cuda na paznokciach. Prywatnie miłośniczka podróży. Jej śmiech, którym łatwo można się zarazić słychać w całej Manierze.",
+    },
+    image: "/employees/patrycja_new.jpg",
+  },
+  {
+    name: "Marianna",
+    desc: {
+      pl: "Wkłada całe serce w swoją pracę i dba o każdy szczegół. Z pozoru cicha ale tylko gdy rozmawia po polsku. Spróbuj ją przegadać po ukraińsku. Może opowie Ci o swoich śmiesznych historiach.",
+      en: "Wkłada całe serce w swoją pracę i dba o każdy szczegół. Z pozoru cicha ale tylko gdy rozmawia po polsku. Spróbuj ją przegadać po ukraińsku. Może opowie Ci o swoich śmiesznych historiach.",
+    },
+    image: "/employees/marianna_new.jpg",
+  },
+  {
+    name: "Vika",
+    desc: {
+      pl: "Prawdziwa estetka. Brwi i rzęsy z pod jej ręki to prawdziwe arcydzieło. W Manierze często możecie ją spotkać z pupilem Chakim.",
+      en: "Prawdziwa estetka. Brwi i rzęsy z pod jej ręki to prawdziwe arcydzieło. W Manierze często możecie ją spotkać z pupilem Chakim.",
+    },
+    image: "/employees/vika_new.jpg",
+  },
+  {
+    name: "Martyna",
+    desc: {
+      pl: "Miłośniczka Zogi i Kobido, o masażach potrafi rozmawiać godzinami. Tylko chwila z nią wystarczy, żeby poczuć dobrą energię, która od niej bije.",
+      en: "Miłośniczka Zogi i Kobido, o masażach potrafi rozmawiać godzinami. Tylko chwila z nią wystarczy, żeby poczuć dobrą energię, która od niej bije.",
+    },
+    image: "/employees/martyna_new.jpg",
   },
 ];
 

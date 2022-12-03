@@ -3,13 +3,19 @@ import React from "react";
 function FadeIn(props) {
   const [isVisible, setVisible] = React.useState(true);
   const domRef = React.useRef();
+
   React.useEffect(() => {
+    if (!domRef.current) return;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
     observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
-  }, []);
+    return () => {
+      if (!domRef.current) return;
+      observer.unobserve(domRef.current);
+    };
+  }, [domRef]);
+
   return (
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}

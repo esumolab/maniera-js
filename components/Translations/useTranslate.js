@@ -47,7 +47,7 @@ const translations = {
         },
         team: {
             role: 'Główna konspiratorka',
-            desc: 'Zawsze trochę zaganiana i roztargniona, ale z ręką na pulsie. Ma milion pomysłów na minutę, uwielbia wyzwania, a przy tym wszystkim towarzyszy jej słodki piesek Tony.'
+            desc: 'Główna konspiratorka naszego babińca. Musimy przyznać, że jest niesamowicie ciepłą osobą. Prywatnie 100% z niej kociara.'
         },
         contact: {
             title: 'Czekamy na Ciebie!',
@@ -152,7 +152,7 @@ const translations = {
         },
         team: {
             role: 'Head conspirator',
-            desc: 'Magdalena may seem all over the place, but she keeps her eye on the prize. With a head full of ideas, she loves taking on new challenges – with her sweet dog Tony always by her side.'
+            desc: 'Główna konspiratorka naszego babińca. Musimy przyznać, że jest niesamowicie ciepłą osobą. Prywatnie 100% z niej kociara.'
         },
         contact: {
             title: 'We’re waiting for you!',

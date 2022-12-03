@@ -1,5 +1,5 @@
 import Link from "next/link";
-import InnerLink from "./InnerLink";
+import InnerLink from "../styles/home/InnerLink";
 import useTranslate from "./Translations/useTranslate";
 
 const Footer = () => {

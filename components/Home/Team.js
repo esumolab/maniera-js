@@ -20,7 +20,7 @@ const Team = ({ ...props }) => {
                 <img className="team-info__arrow" src={arrow} alt="strzałka" />
               </Link>
             </div>
-            <p className="team-info__name">MAGDALENA</p>
+            <p className="team-info__name">EWA</p>
             <p className="team-info__role">{trans.role}</p>
             <p className="team-info__desc">{trans.desc}</p>
           </div>

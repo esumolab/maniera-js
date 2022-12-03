@@ -1,181 +1,191 @@
-$width: 866px;;
+$width: 866px;
 
 .pricing {
-    &-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: #E9E4D8;
-        padding: 120px 0;
-    }
-    &-title {
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e9e4d8;
+    padding: 120px 0;
+  }
+  &-title {
+    @extend %servus-regular-italic;
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+  &-button {
+    margin-top: 75px;
+    width: $width !important;
+  }
+  &-wrapper {
+    width: $width;
+    display: flex;
+    flex-direction: column;
+  }
+  &-item {
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 0 50px;
+    &__categoryTitle {
+      @extend %servus-regular;
+      font-size: 18px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &--open {
         @extend %servus-regular-italic;
-        font-size: 45px;
-        margin-bottom: 15px;
+      }
+      transition: font-style 2s ease;
     }
-    &-button {
-        margin-top: 75px;
-        width: $width !important;
+    &__title {
+      @extend %servus-regular;
+      font-size: 25px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &--open {
+        @extend %servus-regular-italic;
+      }
+      transition: font-style 2s ease;
+      &:hover {
+        font-weight: 600;
+      }
     }
-    &-wrapper {
-        width: $width;
-        display: flex;
-        flex-direction: column;
+    &__wrapper {
+      @extend %servus-regular;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
     }
-    &-item {
-        border-bottom: 1px solid #000;
-        width: 100%;
-        padding: 0 50px;
-        &__title {
-            @extend %servus-regular;
-            font-size: 25px;
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            &--open {
-                @extend %servus-regular-italic;  
-            }
-            transition: font-style 2s ease;
-            &:hover {
-                font-weight: 600;
-            }
-        }
-        &__wrapper {
-            @extend %servus-regular;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            &:last-of-type {
-                margin-bottom: 50px;
-            }
-        }
-        &__price {
-            flex: 0 0 100px;
-            text-align: right;
-            padding-left: 10px;
-        }
+    &__price {
+      flex: 0 0 100px;
+      text-align: right;
+      padding-left: 10px;
     }
+  }
 }
 
 @media all and (min-width: 1680px) {
-    $width: 1060px;;
+  $width: 1060px;
 
-    .pricing {
-        &-content {
-            padding: 160px 0;
+  .pricing {
+    &-content {
+      padding: 160px 0;
+    }
+    &-title {
+      font-size: 62px;
+      margin-bottom: 0;
+    }
+    &-wrapper {
+      width: $width;
+    }
+    &-button {
+      width: $width !important;
+    }
+    &-item {
+      padding: 0 80px;
+      &__title {
+        font-size: 35px;
+        height: 140px;
+      }
+      &__wrapper {
+        font-size: 20px;
+        &:last-of-type {
+          margin-bottom: 50px;
         }
-        &-title {
-            font-size: 62px;
-            margin-bottom: 0;
-        }
-        &-wrapper {
-            width: $width;
-        }
-        &-button {
-            width: $width !important;
-        }
-        &-item {
-            padding: 0 80px;
-            &__title {
-                font-size: 35px;
-                height: 140px;
-            }
-            &__wrapper {
-                font-size: 20px;
-                &:last-of-type {
-                    margin-bottom: 50px;
-                }
-            }
-        }
-    } 
+      }
+    }
+  }
 }
 
 @media all and (max-width: 1366px) {
-
 }
 
 @media all and (max-width: 1024px) {
-    $width: 620px;;
+  $width: 620px;
 
-    .pricing {
-        &-content {
-            padding: 80px 0;
+  .pricing {
+    &-content {
+      padding: 80px 0;
+    }
+    &-title {
+      font-size: 35px;
+      margin-bottom: 0;
+    }
+    &-button {
+      margin-top: 60px;
+      width: $width !important;
+    }
+    &-wrapper {
+      width: $width;
+    }
+    &-item {
+      padding: 0;
+      &__title {
+        &:hover {
+          font-weight: normal;
         }
-        &-title {
-            font-size: 35px;
-            margin-bottom: 0;
-        }
-        &-button {
-            margin-top: 60px;
-            width: $width !important;
-        }
-        &-wrapper {
-            width: $width;
-        }
-        &-item {
-            padding: 0;
-            &__title {
-                &:hover {
-                    font-weight: normal;
-                }
-            }
-        }
-    }    
+      }
+    }
+  }
 }
 
 @media all and (max-width: 767px) {
-    $width: 400px;
+  $width: 400px;
 
-    .pricing {
-        &-content {
-            padding: 80px 0 60px 0;
+  .pricing {
+    &-content {
+      padding: 80px 0 60px 0;
+    }
+    &-title {
+      font-size: 35px;
+      margin-bottom: 0;
+    }
+    &-button {
+      width: $width !important;
+    }
+    &-wrapper {
+      width: $width;
+    }
+    &-item {
+      &__title {
+        font-size: 20px;
+        height: 100px;
+      }
+      &__wrapper {
+        margin-bottom: 15px;
+        &:last-of-type {
+          margin-bottom: 40px;
         }
-        &-title {
-            font-size: 35px;
-            margin-bottom: 0;
-        }
-        &-button {
-            width: $width !important;
-        }
-        &-wrapper {
-            width: $width;
-        }
-        &-item {
-            &__title {
-                font-size: 20px;
-                height: 100px;
-            }
-            &__wrapper {
-                margin-bottom: 15px;
-                &:last-of-type {
-                    margin-bottom: 40px;
-                }
-            }
-        }
-    }     
+      }
+    }
+  }
 }
-
 
 @media all and (max-width: 500px) {
-    $width: 100%;
+  $width: 100%;
 
-    .pricing {
-        &-content {
-            padding: 50px 20px;
-        }
-        &-title {
-            text-align: center;
-        }
-        &-button {
-            width: $width !important;
-        }
-        &-wrapper {
-            width: $width;
-        }
-    } 
+  .pricing {
+    &-content {
+      padding: 50px 20px;
+    }
+    &-title {
+      text-align: center;
+    }
+    &-button {
+      width: $width !important;
+    }
+    &-wrapper {
+      width: $width;
+    }
+  }
 }
-

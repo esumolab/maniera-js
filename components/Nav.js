@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Link from "next/link";
 import classnames from "classnames";
-import InnerLink from "./InnerLink";
+import InnerLink from "../styles/home/InnerLink";
 import useTranslate from "./Translations/useTranslate";
 
 import LangContext from "./Context/langContext";
