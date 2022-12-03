@@ -398,8 +398,8 @@ const PRICES = [
       },
       {
         name: {
-          pl: "Komplet laminacja rzęs + laminacja brwi z koloryzacją 100 min, 350,00 zł",
-          en: "Komplet laminacja rzęs + laminacja brwi z koloryzacją 100 min, 350,00 zł",
+          pl: "Komplet laminacja rzęs + laminacja brwi z koloryzacją 100 min",
+          en: "Komplet laminacja rzęs + laminacja brwi z koloryzacją 100 min",
         },
         price: "380 zł",
       },
@@ -560,8 +560,8 @@ const PRICES = [
         prices: [
           {
             name: {
-              pl: "Oczyszczanie manualne + peeling kwasowy od Holy Land 120 min, 290,00 zł",
-              en: "Oczyszczanie manualne + peeling kwasowy od Holy Land 120 min, 290,00 zł",
+              pl: "Oczyszczanie manualne + peeling kwasowy od Holy Land 120 min",
+              en: "Oczyszczanie manualne + peeling kwasowy od Holy Land 120 min",
             },
             price: "350 zł",
           },
@@ -575,8 +575,8 @@ const PRICES = [
         prices: [
           {
             name: {
-              pl: "Zabieg rozświetlający z 30% witaminą C od IMAGE  60 min, 350,00 zł",
-              en: "Zabieg rozświetlający z 30% witaminą C od IMAGE  60 min, 350,00 zł",
+              pl: "Zabieg rozświetlający z 30% witaminą C od IMAGE  60 min",
+              en: "Zabieg rozświetlający z 30% witaminą C od IMAGE  60 min",
             },
             price: "360 zł",
           },
@@ -597,8 +597,8 @@ const PRICES = [
           },
           {
             name: {
-              pl: "Intensywny zabieg odmladzajacy z masażem twarzy od SOTHYS 75 min, 280,00 zł",
-              en: "Intensywny zabieg odmladzajacy z masażem twarzy od SOTHYS 75 min, 280,00 zł",
+              pl: "Intensywny zabieg odmladzajacy z masażem twarzy od SOTHYS 75 min",
+              en: "Intensywny zabieg odmladzajacy z masażem twarzy od SOTHYS 75 min",
             },
             price: "360 zł",
           },
@@ -852,15 +852,15 @@ const PRICES = [
       },
       {
         name: {
-          pl: "Masaż tajski stóp 75 min, 260,00 zł",
-          en: "Masaż tajski stóp 75 min, 260,00 zł",
+          pl: "Masaż tajski stóp 75 min",
+          en: "Masaż tajski stóp 75 min",
         },
         price: "260 zł",
       },
       {
         name: {
-          pl: "Masaż ciała PeLoHa Peace Love Harmony energetyczne uwolnienie 90 min, 400,00 zł",
-          en: "Masaż ciała PeLoHa Peace Love Harmony energetyczne uwolnienie 90 min, 400,00 zł",
+          pl: "Masaż ciała PeLoHa Peace Love Harmony energetyczne uwolnienie 90 min",
+          en: "Masaż ciała PeLoHa Peace Love Harmony energetyczne uwolnienie 90 min",
         },
         price: "400 zł",
       },
