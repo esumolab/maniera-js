@@ -16,7 +16,6 @@ const PricingItem = ({ title, prices, subCategories }) => {
         </div>
       ));
     return subCategories.map((category) => {
-      console.log(category);
       return (
         <>
           <p className="pricing-item__categoryTitle">{category.title[lang]}</p>
