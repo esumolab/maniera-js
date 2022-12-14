@@ -6,11 +6,11 @@ import useTranslate from "../Translations/useTranslate";
 const Instagram = ({ photos, ...props }) => {
   const { isSmallDesktop, isMobileOrTablet } = useMedia();
 
+
   const trans = useTranslate("instagram");
   let igPhotos = photos.slice(0, 5);
   if (isSmallDesktop) igPhotos = photos.slice(0, 4);
   if (isMobileOrTablet) igPhotos = photos.slice(0, 6);
-
   return (
     <section {...props} className="section">
       <div className="instagram">
