@@ -15,7 +15,8 @@ html {
   color: #000;
   font-weight: normal;
   font-size: 16px;
-
+  overflow-x: hidden;
+  
   @media (max-width: 1024px) {
     overflow-y: auto;
   }
