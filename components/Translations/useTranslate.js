@@ -24,10 +24,10 @@ const translations = {
             title: 'Zajmiemy się Tobą.',
             subtitleLeft: 'Stylizacja paznokci',
             descLeft: 'Wykonujemy stylistykę paznokci naturalnych oraz przedłużanych. U nas umówisz się na manicure japoński, SPA, a także hybrydowy i żelowy. Możesz być pewna, że używamy produktów najwyższej jakości.',
-            subtitleMiddle: 'Stylizacja rzęs',
-            descMiddle: 'Oferujemy przedłużanie rzęs metodami 1:1, 2:1 oraz objętościowymi big volume. Połóż się wygodnie i pozwól naszym stylistkom działać cuda.',
+            subtitleMiddle: 'Stylizacja Oka',
+            descMiddle: 'Oferujemy laminację brwi, lifting/laminację rzęs, botox rzęs, hennę pudrową/farbkę oraz przedłużanie rzęs. Makijaż permanentny wykony przez doświadczone Linergistki. Najważniejsze jest, aby efekt był naturalny. To możemy Ci zagwarantować. Połóż się wygodnie i pozwól naszym Stylistkom działać cuda.',
             subtitleRight: 'Zabiegi kosmetyczne',
-            descRight: 'Nasz gabinet kosmetyczny oferuje gamę zabiegów pielęgnacyjnych przy użyciu luksusowych preparatów marki Sothys, a także urządzeń najnowszej generacji Geneo+.',
+            descRight: 'Nasze gabinety kosmetyczne oferują gamę zabiegów pielęgnacyjnych przy użyciu luksusowych preparatów marki Sothys, DMK- kosmoceutyki do walki z trądzikiem oraz inne marki. Mamy dla ciebie również masaże twarzy Kobido, Zoga, oraz ciała PeLoHa, który działa jak energetyczne uwolnienie. Urządzenia najnowszej generacji Geneo+, Dermapen 4.0 oraz Mezoterapia.',
             bottom: 'Dbamy o Twoje bezpieczeństwo – używamy tylko atestowanych urządzeń i narzędzi.'
         },
         pricing: {

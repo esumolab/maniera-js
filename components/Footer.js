@@ -42,7 +42,7 @@ const Footer = () => {
         <li className="footer-list__follow">FOLLOW US</li>
         <li>
           <a
-            href="https://www.instagram.com/manieranailbar/?hl=pl"
+            href="https://www.instagram.com/maniera_nail_face_bar_/"
             target="_blank"
             rel="noreferrer"
           >

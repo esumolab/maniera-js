@@ -28,7 +28,7 @@ const SECTIONS = [
   Instagram,
 ];
 
-const Home = () => {
+const Home = ({ photos }) => {
   const { isMobileOrTablet } = useMedia();
   const isIE = useIE();
   const { activeElementIndex, handleIndicatorClick, container, indicator } =
@@ -39,7 +39,7 @@ const Home = () => {
       {isMobileOrTablet || isIE ? (
         <>
           {SECTIONS.map((Section, index) => (
-            <Section key={index} />
+            <Section key={index} photos={photos} />
           ))}
         </>
       ) : (
@@ -52,7 +52,7 @@ const Home = () => {
           />
           <div ref={container} className="scroll-wrapper">
             {SECTIONS.map((Section, index) => (
-              <Section id={index} key={index} />
+              <Section photos={photos} id={index} key={index} />
             ))}
           </div>
         </>
